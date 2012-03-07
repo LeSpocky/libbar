@@ -1,4 +1,7 @@
+find_package(FOO 0.1.0 REQUIRED)
+
 get_filename_component(_dir "${CMAKE_CURRENT_LIST_FILE}" PATH)
 get_filename_component(_prefix "${_dir}/../../.." ABSOLUTE)
 include("${_dir}/@PROJECT_NAME@-targets.cmake")
 set(BAR_INCLUDE_DIRS "${_prefix}/include/@PROJECT_NAME@")
+set(BAR_LIBRARIES bar-shared)
