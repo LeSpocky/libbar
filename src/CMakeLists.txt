@@ -15,7 +15,7 @@ set_target_properties(${PROJECT_NAME}-shared PROPERTIES
 )
 
 target_link_libraries(${PROJECT_NAME}-shared
-	foo-shared
+	${FOO_LIBRARIES}
 )
 
 install(TARGETS ${PROJECT_NAME}-shared EXPORT ${PROJECT_NAME}-targets LIBRARY DESTINATION "lib" )

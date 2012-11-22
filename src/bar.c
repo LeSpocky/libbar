@@ -14,11 +14,11 @@
 #include "foo.h"
 
 void bar_hello( void ) {
-	(void) puts( "This is bar library speaking." );
+	(void) puts( "bar: This is bar library speaking." );
 }
 
 void bar_call_foo( void ) {
-	(void) puts( "Next line comes from foo library:" );
+	(void) puts( "bar: This is bar calling foo, watch out:" );
 	foo_hello();
 }
 
