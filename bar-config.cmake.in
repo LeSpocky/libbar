@@ -1,9 +1,13 @@
+# requirements
 @FIND_REQUIRED_PACKAGES@
 
+# paths
+@PACKAGE_INIT@
+set_and_check(BAR_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
+
+# targets
 get_filename_component(_dir "${CMAKE_CURRENT_LIST_FILE}" PATH)
-get_filename_component(_prefix "${_dir}/../../.." ABSOLUTE)
 if(NOT TARGET @PROJECT_NAME@-shared)
 	include("${_dir}/@PROJECT_NAME@-targets.cmake")
 endif(NOT TARGET @PROJECT_NAME@-shared)
-set(BAR_INCLUDE_DIRS "${_prefix}/include/@PROJECT_NAME@")
 set(BAR_LIBRARIES @PROJECT_NAME@-shared)
