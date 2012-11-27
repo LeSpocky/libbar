@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-#include "foo.h"
+#include "foo/foo.h"
 
 void bar_hello( void ) {
 	(void) puts( "bar: This is bar library speaking." );

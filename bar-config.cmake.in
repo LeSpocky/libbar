@@ -1,4 +1,4 @@
-find_package(FOO 0.1.0 REQUIRED)
+@FIND_REQUIRED_PACKAGES@
 
 get_filename_component(_dir "${CMAKE_CURRENT_LIST_FILE}" PATH)
 get_filename_component(_prefix "${_dir}/../../.." ABSOLUTE)
