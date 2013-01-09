@@ -45,4 +45,5 @@ install(FILES
 )
 
 # status and debug output
+message(STATUS "FOO_INCLUDE_DIRS: ${FOO_INCLUDE_DIRS}")
 feature_summary(WHAT ALL)

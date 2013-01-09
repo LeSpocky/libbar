@@ -4,7 +4,6 @@ set(BAR_SRC
 
 include_directories(
 	"${PROJECT_SOURCE_DIR}/inc"
-	"${FOO_INCLUDE_DIRS}"
 )
 
 add_library(${PROJECT_NAME}-shared SHARED ${BAR_SRC})

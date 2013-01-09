@@ -3,7 +3,7 @@
 
 # paths
 @PACKAGE_INIT@
-set_and_check(BAR_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
+set_and_check(BAR_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@/@PROJECT_NAME@")
 
 # targets
 get_filename_component(_dir "${CMAKE_CURRENT_LIST_FILE}" PATH)
